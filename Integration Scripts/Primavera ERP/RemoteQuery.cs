@@ -1,12 +1,5 @@
 //#R Interop.ErpBS900.dll    
 //#R Interop.StdBE900.dll
-
-/*
-Developed by: NumbersBelieve
-Function: The standard file used to obtain queries to the Primavera ERP. This script receives a SQL query string from the system, as well as all the information necessary to authenticate itself with a specific company in the ERP, and returns the result of the SQL query.
-Parameters: N/A
-*/
-
 using System;
 using Newtonsoft.Json;
 using Interop.ErpBS900;
@@ -14,6 +7,11 @@ using Interop.StdBE900;
 using MyMis.Connector.Contracts;
 using MyMis.Connector.ScriptAdapter.Helpers;
 
+/*
+Developed by: NumbersBelieve
+Function: The standard file used to obtain queries to the Primavera ERP. This script receives a SQL query string from the system, as well as all the information necessary to authenticate itself with a specific company in the ERP, and returns the result of the SQL query.
+Parameters: N/A
+*/
 namespace myMIS
 {
     public class Script
