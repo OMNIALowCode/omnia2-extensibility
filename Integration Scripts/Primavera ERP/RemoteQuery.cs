@@ -21,13 +21,13 @@ namespace myMIS
 
             ErpBS bsERP = new ErpBS();
 
-            if (!context.Parameters.ContainsKey("ERPTipoPlataforma"))
+            if (!context.Parameters.ContainsKey("TipoPlataforma"))
             {
                 throw new Exception("TipoPlataforma inválido");
             }
 
             EnumTipoPlataforma tipoPlataforma;
-            if (!Enum.TryParse<EnumTipoPlataforma>((string)context.Parameters["ERPTipoPlataforma"], out tipoPlataforma))
+            if (!Enum.TryParse<EnumTipoPlataforma>((string)context.Parameters["TipoPlataforma"], out tipoPlataforma))
             {
                 throw new Exception("TipoPlataforma inválido");
             }
