@@ -8,3 +8,6 @@ This script is triggered from a transactional entity line in the details of an I
 
 ### RedirectToInteraction.js
 This script is triggered from anywhere in the UI, and it redirects you to the creation of an interaction, with optional parameters for that creation. The same logic can also be adapted for any other operation other than creating an interaction.
+
+### LoadLinesFromERP.js
+This script is triggered from the UI in an interaction, and it loads lines to it from a query to an external system.
