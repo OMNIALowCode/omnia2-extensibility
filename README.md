@@ -1,4 +1,5 @@
 # myMIS Platform Extensibility
+This repository contains code samples for the **myMIS Platform**'s extensibility engine. The myMIS platform is a Microsoft Azure cloud-based platform designed for agile development and operation of Management Information Systems (MIS), enabling a no code development of solutions with rapid prototyping, in a domain-specific language, based on accounting theory and oriented for business professionals. Please access our wiki, at https://github.com/numbersbelieve/myMIS.biz/wiki, for more information.
 
 On top of that business-oriented structure, the platform supports various types of scripting-based extensibility, allowing developer to add flexibility to the developed solutions.
 
