@@ -6,7 +6,7 @@ using System.Web;
 
 /*
 Developed by: NumbersBelieve
-Function: On execution, redirects to the page for creating an entity of type Person, passing it a parameter from the current entity.
+Function: Redirects to the page for creating an entity of type Person, passing it a parameter from the current entity.
 Parameters: An entity or interaction with a text field PersonCode, with an action to execute this script (for example, a Button); A Person entity of type Agent. 
 */
 namespace myMIS
