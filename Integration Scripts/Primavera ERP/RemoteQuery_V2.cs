@@ -140,22 +140,12 @@ namespace myMIS
                 if (!string.IsNullOrEmpty(filter))
                 {
 
-                    Dictionary<string, ExpandoObject> filterDictionary =
-                        Regex.Split(filter, "\\||&")
-                        .Select(s => Regex.Split(s, "(<=|>=|<>|=|<|>)"))
-                        .ToDictionary(k => k[0] + k[1] + k[2], v => new ExpandoObject());
-
-
                     string filterSentence = filter;
-
 
                     var filterCollection = Regex.Split(filter, "\\||&");
 
-
-
                     foreach (var filterClause in filterCollection)
                     {
-
                         string filterAux = filterClause;
 
                         //var filterDecomposed = Regex.Split(filterAux.Replace("(", "").Replace(")", ""), "(>=|<=|<>|=|<|>)"); //GF: 2014.06.23
