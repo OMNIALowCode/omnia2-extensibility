@@ -16,5 +16,8 @@ Obtains data from an external API and fills a list with it. Used as the query sc
 Redirects to the page for creating an entity of type Person, passing it a parameter from the current entity.
 
 ### ERPUpdateCompanyName and CloudUpdateCompanyName.cs
-These two scripts should be used in the same execution - Cloud as Local, ERP as Remote. 
+These two scripts should be used in the same execution - Cloud as Local, ERP as Remote.
 Calls the connector to get some data from the Primavera ERP, processes that data and updates the interaction.
+
+### CreateLinesFromArticles.cs
+Obtains a series of articles from an attribute in the header, and creates a line for each of them.
