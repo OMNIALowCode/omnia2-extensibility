@@ -23,9 +23,9 @@ namespace myMIS
             string[] Artigos = document.Attributes.InsertItem.Split(',');
             foreach (string Item in Artigos)
             {
-                document.Events.PurchaseLine.Add( new PurchaseLine() );
+              document.Events.PurchaseLine.Add( new PurchaseLine() );
 
-				        document.Events.PurchaseLine.Last().Attributes.ItemCode = Item;
+              document.Events.PurchaseLine.Last().Attributes.ItemCode = Item;
             }
 
 
