@@ -21,3 +21,7 @@ Calls the connector to get some data from the Primavera ERP, processes that data
 
 ### CreateLinesFromArticles.cs
 Obtains a series of articles from an attribute in the header, and creates a line for each of them.
+
+### ListConnector.cs and ListCloud.cs
+These two scripts should be used in the same execution - Cloud as Local, Connector as Remote.
+Prints a file from a remote system, via a button on a list of the platform.
