@@ -25,3 +25,9 @@ Obtains a series of articles from an attribute in the header, and creates a line
 ### ListConnector.cs and ListCloud.cs
 These two scripts should be used in the same execution - Cloud as Local, Connector as Remote.
 Prints a file from a remote system, via a button on a list of the platform.
+
+### SaveFileFromPlatform.cs
+An example on how to save a document on the platform with an attribute of File type, and performing operations with it in the connector.
+
+## RedirectWithFilter.cs
+An example on how to open an entity with a filter that is passed from another entity or a list.
