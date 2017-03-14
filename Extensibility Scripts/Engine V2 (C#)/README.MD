@@ -29,5 +29,8 @@ Prints a file from a remote system, via a button on a list of the platform.
 ### SaveFileFromPlatform.cs
 An example on how to save a document on the platform with an attribute of File type, and performing operations with it in the connector.
 
-## RedirectWithFilter.cs
+### RedirectWithFilter.cs
 An example on how to open an entity with a filter that is passed from another entity or a list.
+
+### CreateUsersAndAgents.cs
+Creates an instance of an agent Employee and a new user associated to that agent.
