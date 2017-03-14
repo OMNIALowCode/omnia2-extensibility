@@ -9,6 +9,7 @@ using System.Threading;
 
 /*
 Developed by: NumbersBelieve
+Function: Creates an instance of an agent Employee and a new user associated to that agent.
 Parameters: A tenant with an Employee agent and a domain role named APPROVER.
 */
 
