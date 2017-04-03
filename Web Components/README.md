@@ -11,3 +11,6 @@ Display an embedded Google Maps map, that reacts to changes in the model.
 
 ### ProgressBar.js
 Embeds a progress bar in the UI, that changes shape depending on a value in the model.
+
+### IBANValidator.js
+Example of IBAN validation, as well as adding UI elements that interact with the model.
