@@ -16,6 +16,8 @@ Currently, with the second version of the extensibility engine, these scripts ca
 
 C# scripts that run in the cloud have very limited support for DLL importing, and performance is not guaranteed as soon as you import any of the available DLLs. Some of the example scripts resort to these DLLs (`System.Web.*, System.Net.*`).
 
+On top of the script, this repository also includes **Web Components**, another part of the platform's extensibility, that allows users to define HTML and associated JavaScript in order to extend the UI of the platform (e.g. including maps, or embedding a website).
+
 ## How to run
 To execute any of these scripts, an account on a subscription based on the OMNIA platform is necessary. In the account, the user needs to access the Scripting section, define the moment when they want the script to execute, and validate its execution. Integration scripts require a connection to a valid external system, using a connector on the external system to communicate with the platform.
 
