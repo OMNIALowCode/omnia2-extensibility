@@ -34,3 +34,6 @@ An example on how to open an entity with a filter that is passed from another en
 
 ### CreateUsersAndAgents.cs
 Creates an instance of an agent Employee and a new user associated to that agent.
+
+### CopyInteractionAttributesToNewInteraction.cs
+From a list of an interaction, obtains the document of an instance of that interaction and opens the creation form for a new one with fields copied.
