@@ -11,10 +11,7 @@ WebComponents.NIFValidator = function(){
 	
 	// Required method: Used to return the Component's HTML
 	this.html = function(){
-		return ' 																				\
-						<input type="text" class="form-control" id="NIF_Value"/>				\
-						<span class="form-control-feedback" id="NIF_Error"></span> 				\
-		';
+		return '';
 	};
 	
 	// Optional method: Called after the html is added to the page
@@ -23,29 +20,39 @@ WebComponents.NIFValidator = function(){
 		var nifField = document.getElementById("NIF");
 		var initialValue = nifField.value || '';
 		
-		var input = document.getElementById('NIF_Value');
-			
+		var errorMessageSpan = document.createElement('span')
+		errorMessageSpan.innerHTML = '<span class="form-control-feedback" id="NIF_Error">NIF is invalid!</span>';
+		
+		var successMessageSpan = document.createElement('span')
+		successMessageSpan.innerHTML = '<span class="form-control-feedback" id="NIF_Error">NIF is valid</span>';
+		
+		var input = document.getElementById('NIF');
+		
 		input.onchange = function(event){
-			var input = document.getElementById('NIF_Value');
+			var input = document.getElementById('NIF');
 			var nif = input.value || '';
 			
 			if (isValidNIF(nif)){
-				document.getElementById("NIF_Value").parentNode.parentNode.classList.remove("has-danger");
-				document.getElementById("NIF_Error").innerHTML = "";
+				document.getElementById("NIF").parentNode.parentNode.classList.remove("has-danger");
+				if(errorMessageSpan.parentNode !== null){
+					document.getElementById("NIF").parentNode.parentNode.removeChild(errorMessageSpan);	
+				}
+				
+				document.getElementById("NIF").parentNode.parentNode.appendChild(successMessageSpan);
 				
 				var nifField = document.getElementById("NIF");
 				nifField.value = nif;
 				nifField.dispatchEvent(new Event('change'));
 			}
 			else{					
-				document.getElementById("NIF_Value").parentNode.parentNode.classList.add("has-danger");
-				document.getElementById("NIF_Error").innerHTML = "NIF is invalid!";
-				
-				var nifField = document.getElementById("NIF");
-				nifField.value = ""; //do not allow saving
-				nifField.dispatchEvent(new Event('change'));
+				document.getElementById("NIF").parentNode.parentNode.classList.add("has-danger");
+				if(successMessageSpan.parentNode !== null){
+					document.getElementById("NIF").parentNode.parentNode.removeChild(successMessageSpan);	
+				}
+				document.getElementById("NIF").parentNode.parentNode.appendChild(errorMessageSpan);
 			}
 		};
+		
 	};
 	
 	//NIF validation function adapted from http://rtenreirosa.blogspot.pt/2012/06/validar-nif-com-javascript.html
